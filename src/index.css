@@ -12,3 +12,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.h-navbar {
+  background-color: #ebecec;
+  color: #282c34;
+}
+.v-navbar {
+  background-color: #282c34;
+  display: inline-block;
+}
+.v-navbar > ul {
+  width: 200px;
+  height: 1020px;
+  color: white;
+}
+.v-navbar > ul > li {
+  display: block;
+}
+.dashboard {
+  height: 300px;
+  position: relative;
+  background-color: #8a3e3e;
+  height: 1020px;
+}

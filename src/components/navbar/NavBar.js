@@ -1,14 +1,16 @@
 import React, { Component } from "react";
-import SignedInLinks from "./SignedInLinks";
+import HorizontalNavBar from "./HorizontalNavBar";
 
 class NavBar extends Component {
   render() {
     return (
-      <nav>
-        <div className="nav-wrapped navbar right">
-          <SignedInLinks />
-        </div>
-      </nav>
+      <div>
+        <nav className="h-navbar black-text">
+          <div className="right">
+            <HorizontalNavBar />
+          </div>
+        </nav>
+      </div>
     );
   }
 }

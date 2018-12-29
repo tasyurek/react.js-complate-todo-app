@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import NavBar from "./components/navbar/NavBar";
-import { BrowserRouter, Route } from "react-router-dom";
-import SignedInLinks from "./components/navbar/SignedInLinks";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Dashboard from "./components/dashboard/Dashboard";
+import SignIn from "./components/auth/SignIn";
+import SignOut from "./components/auth/SignOut";
+import VerticalNavBar from "./components/navbar/VerticalNavBar";
 
 class App extends Component {
   render() {
@@ -9,9 +12,12 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <NavBar />
-          <switch>
-            <Route path="/home" Component={SignedInLinks} />
-          </switch>
+          <VerticalNavBar />
+          <Switch>
+            <Route path="/" component={Dashboard} exact />
+            <Route path="/signin" component={SignIn} />
+            <Route path="/signout" component={SignOut} />
+          </Switch>
         </div>
       </BrowserRouter>
     );
