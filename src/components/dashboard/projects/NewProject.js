@@ -1,14 +1,21 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
-class SignIn extends Component {
+export class NewProject extends Component {
   render() {
     return (
       <div>
         <div className="row">
           <div className="col s12 m6 offset-m3 l4 offset-l4">
-            <h3>Sign in</h3>
+            <h3>Create Project</h3>
             <form>
+              <label htmlFor="projectName">
+                Project name
+                <input type="text" id="projectName" />
+              </label>
+              <label htmlFor="lastName">
+                Last name
+                <input type="text" id="lastName" />
+              </label>
               <label htmlFor="email">
                 Email
                 <input type="email" id="email" />
@@ -17,9 +24,7 @@ class SignIn extends Component {
                 Password
                 <input type="password" id="password" />
               </label>
-              <Link to="/home" className="btn">
-                Submit
-              </Link>
+              <div className="btn">Submit</div>
             </form>
           </div>
         </div>
@@ -28,4 +33,4 @@ class SignIn extends Component {
   }
 }
 
-export default SignIn;
+export default NewProject;

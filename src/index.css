@@ -6,31 +6,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow: hidden;
+  height: 100%;
+}
+.dark {
+  background-color: #282c34;
+  color: #f5f5f7;
 }
 
+.dark:hover {
+  background-color: #363b44;
+  color: #f5f5f7;
+}
+
+.yellw {
+  background-color: #fbc02d;
+  color: #282c34;
+  font-weight: 450;
+}
+.yellw:hover {
+  background-color: #f5f5f7;
+  font-weight: 450;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.h-navbar {
-  background-color: #ebecec;
+.navbar {
+  background-color: #282c34;
   color: #282c34;
 }
-.v-navbar {
+
+nav ul a {
+  color: #f5f5f7;
+  font-weight: 400;
+}
+
+form {
+  padding-top: 30px;
+}
+
+.signout h5 {
+  letter-spacing: 1.1px;
+  padding: 10px 0 20px;
+}
+
+.project {
+  margin: 30px 0;
   background-color: #282c34;
-  display: inline-block;
-}
-.v-navbar > ul {
-  width: 200px;
-  height: 1020px;
-  color: white;
-}
-.v-navbar > ul > li {
-  display: block;
-}
-.dashboard {
-  height: 300px;
-  position: relative;
-  background-color: #8a3e3e;
-  height: 1020px;
+  color: #f5f5f7;
 }

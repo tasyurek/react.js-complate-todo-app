@@ -1,16 +1,18 @@
 import React, { Component } from "react";
-import HorizontalNavBar from "./HorizontalNavBar";
+import SignedOutLinks from "./SignedOutLinks";
+import SignedInLinks from "./SignedInLinks";
 
-class NavBar extends Component {
+export class NavBar extends Component {
   render() {
     return (
-      <div>
-        <nav className="h-navbar black-text">
-          <div className="right">
-            <HorizontalNavBar />
-          </div>
-        </nav>
-      </div>
+      <nav className="navbar z-depth-1">
+        <div className="container">
+          <a href="/" className="brand-logo center hide-on-med-and-down">
+            TODO
+          </a>
+          <SignedInLinks />
+        </div>
+      </nav>
     );
   }
 }
