@@ -9,7 +9,7 @@ class SignedInLinks extends Component {
           <NavLink to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/projectlist">Projects</NavLink>
+          <NavLink to="/createproject">Create Project</NavLink>
         </li>
         <li>
           <NavLink to="/signout">Sign out</NavLink>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
-import RootRouter from "./Routers/RootRouter";
+import RootRouter from "./routers/RootRouter";
 
 class App extends Component {
   render() {

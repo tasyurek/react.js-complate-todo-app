@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Project from "./Project";
-import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 class ProjectList extends Component {
@@ -12,12 +11,9 @@ class ProjectList extends Component {
         return <Project project={project} key={project.id} />;
       });
     return (
-      <div className="container projects">
+      <div>
         <h3>Projects</h3>
         {projectList}
-        <Link to="/newproject" className="btn-large dark">
-          New Project
-        </Link>
       </div>
     );
   }
@@ -27,9 +23,7 @@ const mapStateToProps = state => ({
   projects: state.projectReducer
 });
 
-const connectProjectList = connect(
+export default connect(
   mapStateToProps,
   null
 )(ProjectList);
-
-export default connectProjectList;
