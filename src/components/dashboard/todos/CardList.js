@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import Card from "./Card";
 
-export class CardList extends Component {
+class CardList extends Component {
   render() {
     const cards = this.props.cards;
     const cardList = cards.map(card => {

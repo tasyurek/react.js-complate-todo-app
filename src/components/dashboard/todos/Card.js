@@ -6,9 +6,9 @@ class Card extends Component {
   render() {
     return (
       <div>
-        <div className="col s12 m3 offset-m1 card">
-          <div className="card-content">
-            <span className="card-title"> {this.props.title}</span>
+        <div className="col s12 m3 todo-card">
+          <div className="todo-card-content">
+            <span className="todo-card-title"> {this.props.title}</span>
             <Header cardId={this.props.cardId} />
             <Footer />
           </div>

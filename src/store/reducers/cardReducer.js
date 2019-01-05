@@ -1,3 +1,4 @@
+import { CREATE_CARD } from "../actions/actions";
 const cards = [
   { cardId: 1, title: "Todo" },
   { cardId: 2, title: "In Progress" },
@@ -5,6 +6,13 @@ const cards = [
 ];
 
 const cardReducer = (state = cards, action) => {
-  return state;
+  switch (action.type) {
+    case CREATE_CARD:
+      console.log(action.cardId, action.title);
+      return [...state, { cardId: action.cardId, title: action.title }];
+    default:
+      console.log("failed");
+      return state;
+  }
 };
 export default cardReducer;

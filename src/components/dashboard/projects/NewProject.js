@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import createProject from "../../../store/actions/createProject";
 import { connect } from "react-redux";
 import { Redirect } from "react-router";
@@ -65,9 +64,7 @@ export class NewProject extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    createProject: title => {
-      dispatch(createProject(title));
-    }
+    createProject: title => dispatch(createProject(title))
   };
 };
 
