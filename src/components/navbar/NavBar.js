@@ -5,14 +5,9 @@ import SignedInLinks from "./SignedInLinks";
 export class NavBar extends Component {
   render() {
     return (
-      <nav className="navbar z-depth-1">
-        <div className="container">
-          <a href="/" className="brand-logo center hide-on-med-and-down">
-            TODO
-          </a>
-          <SignedInLinks />
-        </div>
-      </nav>
+      <div>
+        <SignedInLinks />
+      </div>
     );
   }
 }

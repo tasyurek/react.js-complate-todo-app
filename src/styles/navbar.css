@@ -1,0 +1,61 @@
+.navbar {
+  background-color: #282c34;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar .navitem {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar .navitem:not(:first-child):hover {
+  background-color: #3a3d42;
+}
+
+.navbar > .brand-logo {
+  float: left;
+  background-color: #ff644f;
+}
+
+.navbar > .icon {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .navbar > .navitem:not(:nth-child(4)) {
+    display: none;
+  }
+
+  .navbar.responsive > .navitem,
+  .navbar.responsive:not(:last-child) {
+    display: block;
+    float: none;
+  }
+
+  .navbar > .icon {
+    display: block;
+  }
+}
