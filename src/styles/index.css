@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
+  background-color: #202125;
+  color: #f5f5f7;
 }
 
 .dark {
@@ -14,22 +16,9 @@ body {
   color: #f5f5f7;
 }
 
-.yellw {
-  background-color: #fbc02d;
-  color: #282c34;
-  font-weight: 450;
-}
-.yellw:hover {
-  background-color: #ffcc4d;
-  font-weight: 450;
-}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-form {
-  padding-top: 30px;
 }
 
 .signout h5 {
@@ -37,8 +26,16 @@ form {
   padding: 10px 0 20px;
 }
 
+/* project CSS ----------------------*/
+
+.projectList {
+  margin-right: 50px;
+}
+.projectList > h3 {
+  padding-left: 10px;
+}
+
 .project {
-  margin: 20px 0;
   padding: 16px;
   background-color: #282c34;
   color: #f5f5f7;
@@ -46,14 +43,80 @@ form {
   align-items: center;
   justify-content: space-between;
 }
-
-/* label underline focus color */
-.input-field input[type="text"]:focus {
-  border-bottom: 1px solid #fbc02d;
-  box-shadow: 0 1px 0 0 #000;
+.project:hover {
+  background-color: #202125;
+  border-left: 5px solid #ff644f;
 }
 
-.todo-card {
+.project > .projectTitle {
+  word-wrap: break-word;
+}
+
+/* card CSS ----------------------*/
+
+.card {
+  background-color: #282c34;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardHeader {
+  border-bottom: 3px dotted #202125;
+  margin-bottom: 0px;
+}
+
+.cardHeader > h4 {
+  word-wrap: break-word;
+  padding: 20px;
+  margin: 0;
+}
+
+.todoList {
+  padding: 10px;
+  border-bottom: 3px dotted #202125;
+}
+
+.cardFooter {
+  padding: 20px;
+}
+
+.todo > p {
+  margin: 0;
+  padding: 10px;
+}
+
+/* input CSS ----------------------*/
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.button {
+  border: none;
+  background-color: #f5f5f7;
+  padding: 12px 14px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.button:hover {
+  border: none;
+  background-color: #ff644f;
+  color: white;
+  cursor: pointer;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
   background-color: #fff;
-  margin: 10px;
+}
+
+.icon:hover {
+  color: #ff644f;
+  cursor: pointer;
 }

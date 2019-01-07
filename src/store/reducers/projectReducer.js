@@ -3,23 +3,23 @@ import { CREATE_PROJECT } from "../actions/actions";
 const projects = [
   {
     id: 1,
-    title: "delectus aut autem"
+    title: "Delectus aut autem"
   },
   {
     id: 2,
-    title: "quis ut nam facilis et officia qui"
+    title: "Quis ut nam facilis et officia qui"
   },
   {
     id: 3,
-    title: "fugiat veniam minus"
+    title: "Fugiat veniam minus"
   },
   {
     id: 4,
-    title: "et porro tempora"
+    title: "Et porro tempora"
   },
   {
     id: 5,
-    title: "laboriosam mollitia et enim quasi adipisci quia provident illum"
+    title: "Laboriosam mollitia"
   }
 ];
 

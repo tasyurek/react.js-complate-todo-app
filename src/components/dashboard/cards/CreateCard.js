@@ -18,36 +18,34 @@ class CreateCard extends Component {
 
   render() {
     let cardStyle;
-    this.state.active
-      ? (cardStyle = "col s12 m3 card createcard white")
-      : (cardStyle = "col s12 m3 card createcard yellw");
+    this.state.active ? (cardStyle = "card") : (cardStyle = "");
 
     return (
       <div className={cardStyle}>
         {!this.state.active && (
-          <div className="card-content" onClick={this.handleClick}>
+          <button className="button" onClick={this.handleClick}>
             Add Card
-          </div>
+          </button>
         )}
         {this.state.active && (
-          <div className="card-action input-field">
+          <div>
             <input
               type="text"
               onChange={this.handleChange}
               value={this.state.input}
             />
-            <div
-              className="btn yellw"
+            <button
+              className="button"
               onClick={() => {
                 this.props.createCard(this.state.input);
                 this.setState({ input: "", active: false });
               }}
             >
               Add
-            </div>
-            <div className="btn red right" onClick={this.handleClick}>
+            </button>
+            <button className="button right" onClick={this.handleClick}>
               Cancel
-            </div>
+            </button>
           </div>
         )}
       </div>

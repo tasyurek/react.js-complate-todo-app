@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import Todo from "./Todo";
 
-class Header extends Component {
+class TodoList extends Component {
   render() {
     const cardId = this.props.cardId;
     let todos = this.props.todos;
@@ -11,11 +12,11 @@ class Header extends Component {
     const todoList = todos.map(todo => {
       return (
         <div key={todo.id}>
-          <div key={todo.id}>{todo.todo}</div>
+          <Todo key={todo.id} todo={todo.todo} />
         </div>
       );
     });
-    return <div>{todoList}</div>;
+    return <div className="todoList">{todoList}</div>;
   }
 }
 
@@ -29,4 +30,4 @@ const mapStateToProps = state => {
 export default connect(
   mapStateToProps,
   null
-)(Header);
+)(TodoList);

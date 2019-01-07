@@ -1,0 +1,11 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+}
+
+.cardList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+}

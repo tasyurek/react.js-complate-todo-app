@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Card from "./Card";
+import CreateCard from "./CreateCard";
 
 class CardList extends Component {
   render() {
@@ -13,7 +14,15 @@ class CardList extends Component {
       );
     });
 
-    return <div>{cardList}</div>;
+    return (
+      <div>
+        <h3>Cards</h3>
+        <div className="cardList">
+          {cardList}
+          <CreateCard />
+        </div>
+      </div>
+    );
   }
 }
 
