@@ -72,7 +72,7 @@ code {
 }
 
 .todoList {
-  padding: 10px;
+  padding: 20px;
   border-bottom: 3px dotted #202125;
 }
 
@@ -80,9 +80,9 @@ code {
   padding: 20px;
 }
 
-.todo > p {
+.todo > .todoContent {
+  padding-bottom: 12px;
   margin: 0;
-  padding: 10px;
 }
 
 /* input CSS ----------------------*/
@@ -90,6 +90,18 @@ code {
 input[type="text"] {
   width: 100%;
   margin-bottom: 12px;
+}
+
+textarea {
+  font-size: 16px;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 4px;
+  font-family: "Raleway", sans-serif;
+  color: #202125;
+  font-weight: 600;
+  padding: 4px 7px;
+  box-sizing: border-box;
 }
 
 .button {
@@ -107,13 +119,16 @@ input[type="text"] {
   cursor: pointer;
 }
 
+.buttonBar {
+  padding-top: 12px;
+}
+
 .left {
   float: left;
 }
 
 .right {
   float: right;
-  background-color: #fff;
 }
 
 .icon:hover {

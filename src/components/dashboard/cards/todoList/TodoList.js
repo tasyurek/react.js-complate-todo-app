@@ -1,22 +1,32 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Todo from "./Todo";
+import AddTodo from "./AddTodo";
 
 class TodoList extends Component {
   render() {
     const cardId = this.props.cardId;
     let todos = this.props.todos;
+
     // return filtered todos by card id
     todos = todos.filter(todo => todo.cardId === cardId);
+
     // mapping filtered todos
     const todoList = todos.map(todo => {
       return (
         <div key={todo.id}>
-          <Todo key={todo.id} todo={todo.todo} />
+          <Todo key={todo.id} todo={todo} />
         </div>
       );
     });
-    return <div className="todoList">{todoList}</div>;
+    return (
+      <div className="todoList">
+        {todoList}
+        <div>
+          <AddTodo cardId={cardId} />
+        </div>
+      </div>
+    );
   }
 }
 

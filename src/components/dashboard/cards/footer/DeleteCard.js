@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import deleteCard from "../../../../store/actions/deleteCard";
 import { connect } from "react-redux";
+import deleteCard from "../../../../store/actions/deleteCard";
 
 export class DeleteCard extends Component {
   state = { show: false };
@@ -10,15 +10,13 @@ export class DeleteCard extends Component {
   };
 
   render() {
-    const cardId = this.props.cardId;
-
     const deleteQuestion = this.state.show ? (
       <div>
         <p>Are you sure?</p>
         <button
           className="button"
           onClick={() => {
-            this.props.deleteCard(cardId);
+            this.props.deleteCard(this.props.cardId);
           }}
         >
           Yes
@@ -28,7 +26,6 @@ export class DeleteCard extends Component {
         </button>
       </div>
     ) : null;
-
     return (
       <div>
         <i
