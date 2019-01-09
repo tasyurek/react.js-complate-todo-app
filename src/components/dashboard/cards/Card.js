@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import TodoList from "./todoList/TodoList";
-import Footer from "./footer/Footer";
-import Header from "./header/Header";
+import CardBody from "./card-body/CardBody";
+import CardFooter from "./card-footer/CardFooter";
+import CardHeader from "./card-header/CardHeader";
 
 class Card extends Component {
   render() {
     return (
       <div>
         <div className="card">
-          <Header title={this.props.title} />
-          <TodoList cardId={this.props.cardId} />
-          <Footer cardId={this.props.cardId} />
+          <CardHeader title={this.props.title} />
+          <CardBody cardId={this.props.cardId} />
+          <CardFooter cardId={this.props.cardId} />
         </div>
       </div>
     );

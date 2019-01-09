@@ -27,7 +27,7 @@ class CreateCard extends Component {
 
   render() {
     let cardStyle;
-    this.state.active ? (cardStyle = "createCard") : (cardStyle = "");
+    this.state.active ? (cardStyle = "add-card") : (cardStyle = "");
 
     return (
       <div className={cardStyle}>
@@ -37,15 +37,16 @@ class CreateCard extends Component {
           </button>
         )}
         {this.state.active && (
-          <form onSubmit={this.handleSubmit}>
-            <div className="inputBar">
+          <form className="form" onSubmit={this.handleSubmit}>
+            <div className="title-bar">Card title</div>
+            <div className="input-bar">
               <input
                 type="text"
                 onChange={this.handleChange}
                 value={this.state.input}
               />
             </div>
-            <div className="buttonBar">
+            <div className="button-bar">
               <input type="submit" className="button" value="Add" />
               <button className="button right" onClick={this.handleClick}>
                 Cancel

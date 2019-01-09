@@ -20,9 +20,9 @@ class TodoList extends Component {
       );
     });
     return (
-      <div className="todoList">
-        {todoList}
-        <div>
+      <div className="card-body">
+        <div className="todo-list">{todoList}</div>
+        <div className="todo-actions">
           <AddTodo cardId={cardId} />
         </div>
       </div>

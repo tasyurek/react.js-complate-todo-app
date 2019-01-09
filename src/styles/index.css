@@ -5,7 +5,13 @@ body {
   background-color: #202125;
   color: #f5f5f7;
 }
-
+p,
+h4,
+i,
+textarea {
+  padding: 0;
+  margin: 0;
+}
 .dark {
   background-color: #282c34;
   color: #f5f5f7;
@@ -20,18 +26,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-.signout h5 {
-  letter-spacing: 1.1px;
-  padding: 10px 0 20px;
-}
-
 /* project CSS ----------------------*/
 
-.projectList {
+.project-list {
   margin-right: 50px;
 }
-.projectList > h3 {
+.project-list > h3 {
   padding-left: 10px;
 }
 
@@ -50,51 +50,77 @@ code {
   border-left: 5px solid #ff644f;
 }
 
-.project > .projectTitle {
+.project > .project-title {
   word-wrap: break-word;
 }
 
 /* card CSS ----------------------*/
-
+/*
 .card {
   background-color: #282c34;
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.cardHeader,
+.todoList,
+.cardFooter {
+  padding: 10px;
+}
+
+.cardHeader > *,
+.cardFooter .form,
+.todoContent,
+.createCard {
+  padding: 10px;
+}
+
+.card,
+.todoContent,
+.createCard,
+.form,
+input[type="text"],
+textarea,
+.button {
+  border-radius: 4px;
+}
+
+.form > * {
+  padding: 10px;
+}
+
 .cardHeader {
-  border-bottom: 3px dotted #202125;
+  border-bottom: 1.25px solid #202125;
   margin-bottom: 0px;
 }
 
 .cardHeader > h4 {
   word-wrap: break-word;
-  padding: 20px;
   margin: 0;
 }
 
 .todoList {
-  padding: 20px;
-  border-bottom: 3px dotted #202125;
+  border-bottom: 1.25px solid #202125;
 }
 
-.cardFooter {
-  padding: 20px;
-}
-
-.todo > .todoContent {
-  padding-bottom: 12px;
+.todoContent {
   margin: 0;
 }
 
-.createCard {
-  padding: 20px;
-  background-color: #282c34;
-  height: 90px;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.todo > .todoContent:hover {
+  background-color: #202125;
 }
 
+.createCard {
+  background-color: #282c34;
+  height: 120px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.addTodo .error {
+  color: #ff644f;
+  padding-bottom: 0;
+}
+*/
 /* input CSS ----------------------*/
 
 input[type="text"] {
@@ -105,14 +131,12 @@ input[type="text"] {
   padding: 7px 7px;
   box-sizing: border-box;
   border: none;
-  border-radius: 4px;
 }
 
 textarea {
   font-size: 16px;
   width: 100%;
   max-width: 100%;
-  border-radius: 4px;
   font-family: "Raleway", sans-serif;
   color: #202125;
   font-weight: 600;
@@ -124,8 +148,8 @@ textarea {
   border: none;
   background-color: #f5f5f7;
   padding: 12px 14px;
-  border-radius: 3px;
   font-size: 14px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 .button:hover {
@@ -133,10 +157,7 @@ textarea {
   background-color: #ff644f;
   color: white;
   cursor: pointer;
-}
-
-.buttonBar {
-  padding-top: 12px;
+  box-shadow: 0 0px;
 }
 
 .left {
@@ -147,7 +168,13 @@ textarea {
   float: right;
 }
 
+.icon {
+  padding: 10px;
+  border-radius: 50%;
+}
+
 .icon:hover {
-  color: #ff644f;
+  background-color: #383c46;
+  color: #f5f5f7;
   cursor: pointer;
 }

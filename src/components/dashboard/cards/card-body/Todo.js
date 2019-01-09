@@ -5,8 +5,7 @@ class Todo extends Component {
     console.log(this.props.todo);
     return (
       <div className="todo">
-        <p className="todoContent">{this.props.todo.content}</p>
-        <span> </span>
+        <p>{this.props.todo.content}</p>
       </div>
     );
   }

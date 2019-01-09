@@ -4,8 +4,10 @@ import DeleteCard from "./DeleteCard";
 class Footer extends Component {
   render() {
     return (
-      <div className="cardFooter">
-        <DeleteCard cardId={this.props.cardId} />
+      <div className="card-footer">
+        <div className="card-actions">
+          <DeleteCard cardId={this.props.cardId} />
+        </div>
       </div>
     );
   }

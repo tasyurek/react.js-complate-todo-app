@@ -5,8 +5,7 @@ class Project extends Component {
     let project = this.props.project;
     return (
       <div className="project">
-        <p className="projectTitle">{project.title}</p>
-        <button className="button">Edit</button>
+        <p className="project-title">{project.title}</p>
       </div>
     );
   }

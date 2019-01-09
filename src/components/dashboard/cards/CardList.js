@@ -17,7 +17,7 @@ class CardList extends Component {
     return (
       <div>
         <h3>Cards</h3>
-        <div className="cardList">
+        <div className="card-list">
           {cardList}
           <CreateCard />
         </div>
