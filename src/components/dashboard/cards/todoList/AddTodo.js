@@ -31,7 +31,9 @@ export class AddTodo extends Component {
         </div>
       </div>
     ) : (
-      <i className="fas fa-plus-circle icon" onClick={this.handleClick} />
+      <div>
+        <i className="fas fa-plus-circle icon" onClick={this.handleClick} />
+      </div>
     );
 
     return <div>{input}</div>;

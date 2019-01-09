@@ -36,12 +36,14 @@ code {
 }
 
 .project {
-  padding: 16px;
+  padding: 10px;
   background-color: #282c34;
   color: #f5f5f7;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  border-left: 5px solid #282c34;
 }
 .project:hover {
   background-color: #202125;
@@ -85,11 +87,25 @@ code {
   margin: 0;
 }
 
+.createCard {
+  padding: 20px;
+  background-color: #282c34;
+  height: 90px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 /* input CSS ----------------------*/
 
 input[type="text"] {
   width: 100%;
-  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #202125;
+  padding: 7px 7px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
 }
 
 textarea {

@@ -9,16 +9,25 @@ class CreateCard extends Component {
   };
 
   handleClick = () => {
-    this.setState(previousState => ({ active: !previousState.active }));
+    this.setState(previousState => ({
+      active: !previousState.active,
+      input: ""
+    }));
   };
 
   handleChange = e => {
     this.setState({ input: e.target.value });
   };
 
+  handleSubmit = e => {
+    e.preventDefault();
+    this.props.createCard(this.state.input);
+    this.setState({ input: "", active: false });
+  };
+
   render() {
     let cardStyle;
-    this.state.active ? (cardStyle = "card") : (cardStyle = "");
+    this.state.active ? (cardStyle = "createCard") : (cardStyle = "");
 
     return (
       <div className={cardStyle}>
@@ -28,25 +37,21 @@ class CreateCard extends Component {
           </button>
         )}
         {this.state.active && (
-          <div>
-            <input
-              type="text"
-              onChange={this.handleChange}
-              value={this.state.input}
-            />
-            <button
-              className="button"
-              onClick={() => {
-                this.props.createCard(this.state.input);
-                this.setState({ input: "", active: false });
-              }}
-            >
-              Add
-            </button>
-            <button className="button right" onClick={this.handleClick}>
-              Cancel
-            </button>
-          </div>
+          <form onSubmit={this.handleSubmit}>
+            <div className="inputBar">
+              <input
+                type="text"
+                onChange={this.handleChange}
+                value={this.state.input}
+              />
+            </div>
+            <div className="buttonBar">
+              <input type="submit" className="button" value="Add" />
+              <button className="button right" onClick={this.handleClick}>
+                Cancel
+              </button>
+            </div>
+          </form>
         )}
       </div>
     );
