@@ -31,7 +31,7 @@ export class DeleteCard extends Component {
       </div>
     ) : (
       <i
-        className="far fa-trash-alt icon"
+        className="far fa-trash-alt icon right"
         onClick={() => {
           // this.props.deleteCard(cardId);
           this.setState({ show: true });

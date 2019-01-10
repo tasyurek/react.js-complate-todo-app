@@ -1,4 +1,4 @@
-import { ADD_TODO } from "../actions/actions";
+import { ADD_TODO, DELETE_TODO } from "../actions/actions";
 
 const todos = [
   { id: 1, cardId: 1, content: "Learn JavaScript" },
@@ -7,6 +7,7 @@ const todos = [
 ];
 
 const todoReducer = (state = todos, action) => {
+  console.log("todo action.type:", action.type);
   switch (action.type) {
     case ADD_TODO:
       const newTodo = {
@@ -16,8 +17,13 @@ const todoReducer = (state = todos, action) => {
       };
       return [...state, newTodo];
 
+    case DELETE_TODO:
+      let newTodos = state.filter(todo => todo.id !== action.id);
+      return [...newTodos];
+
     default:
       return state;
   }
 };
+
 export default todoReducer;

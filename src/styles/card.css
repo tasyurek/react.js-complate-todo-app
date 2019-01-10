@@ -14,6 +14,7 @@
 .todo,
 .add-card {
   padding: 10px;
+  overflow: auto;
 }
 
 .card-header,
@@ -25,11 +26,13 @@
 .add-card {
   background-color: var(--lighten-bg-color);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 /* header */
 .card-header {
   padding: 20px;
+  word-wrap: break-word;
 }
 
 /* body */
@@ -38,10 +41,19 @@
 
 .todo-list {
 }
+
 .todo {
+  display: grid;
+  align-items: center;
 }
 .todo:hover {
   background-color: var(--hover-bg-color);
+}
+.todo-content {
+  word-wrap: break-word;
+  overflow: hidden;
+}
+.todo-header {
 }
 .add-todo {
 }
