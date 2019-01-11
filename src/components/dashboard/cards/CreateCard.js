@@ -5,13 +5,15 @@ import { connect } from "react-redux";
 class CreateCard extends Component {
   state = {
     input: "",
-    active: false
+    active: false,
+    error: ""
   };
 
   handleClick = () => {
     this.setState(previousState => ({
       active: !previousState.active,
-      input: ""
+      input: "",
+      error: ""
     }));
   };
 
@@ -21,14 +23,15 @@ class CreateCard extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.createCard(this.state.input);
-    this.setState({ input: "", active: false });
+
+    if (this.state.input.trim()) {
+      this.props.createCard(this.state.input);
+      this.setState({ input: "", active: false });
+    } else this.setState({ error: "It should not be empty!" });
   };
 
   render() {
-    let cardStyle;
-    this.state.active ? (cardStyle = "add-card") : (cardStyle = "");
-
+    const cardStyle = this.state.active ? "add-card" : "";
     return (
       <div className={cardStyle}>
         {!this.state.active && (
@@ -52,6 +55,7 @@ class CreateCard extends Component {
                 Cancel
               </button>
             </div>
+            <span className="error">{this.state.error}</span>
           </form>
         )}
       </div>

@@ -10,7 +10,11 @@ export class AddTodo extends Component {
   };
 
   handleCancel = () => {
-    this.setState(prevState => ({ show: !prevState.show, error: "" }));
+    this.setState(prevState => ({
+      show: !prevState.show,
+      content: "",
+      error: ""
+    }));
   };
 
   handleChange = e => {
@@ -38,11 +42,11 @@ export class AddTodo extends Component {
           <button className="button" onClick={this.handleSubmit}>
             Add
           </button>
-          <i className="fas fa-times icon right" onClick={this.handleCancel} />
+          <button className="button right" onClick={this.handleCancel}>
+            Cancel
+          </button>
         </div>
-        <div className="footer-bar">
-          <p className="error">{error}</p>
-        </div>
+        <span className="error">{error}</span>
       </div>
     ) : (
       <div>

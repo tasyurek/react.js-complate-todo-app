@@ -10,12 +10,8 @@ class ProjectList extends Component {
       projects.map(project => {
         return <Project project={project} key={project.id} />;
       });
-    return (
-      <div className="project-list">
-        <h3>Projects</h3>
-        {projectList}
-      </div>
-    );
+
+    return <div className="project-list">{projectList}</div>;
   }
 }
 

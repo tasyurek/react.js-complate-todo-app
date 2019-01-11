@@ -1,9 +1,22 @@
+:root {
+  /* bg colors */
+  --primary-color: #202125;
+  --secondary-color: #212329;
+  --card-color: #282c34;
+  --hover-bg-color: #383c46;
+  --uniqe-color: #e5ef9d;
+  --warn-color: #ff644f;
+  /* input colors */
+  --text-color: #f5f5f7;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
   background-color: #202125;
   color: #f5f5f7;
+  word-wrap: break-word;
 }
 p,
 h4,
@@ -12,116 +25,11 @@ textarea {
   padding: 0;
   margin: 0;
 }
-.dark {
-  background-color: #282c34;
-  color: #f5f5f7;
-}
-
-.dark:hover {
-  background-color: #363b44;
-  color: #f5f5f7;
-}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-/* project CSS ----------------------*/
-
-.project-list {
-  margin-right: 50px;
-}
-.project-list > h3 {
-  padding-left: 10px;
-}
-
-.project {
-  padding: 10px;
-  background-color: #282c34;
-  color: #f5f5f7;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  border-left: 5px solid #282c34;
-}
-.project:hover {
-  background-color: #202125;
-  border-left: 5px solid #ff644f;
-}
-
-.project > .project-title {
-  word-wrap: break-word;
-}
-
-/* card CSS ----------------------*/
-/*
-.card {
-  background-color: #282c34;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.cardHeader,
-.todoList,
-.cardFooter {
-  padding: 10px;
-}
-
-.cardHeader > *,
-.cardFooter .form,
-.todoContent,
-.createCard {
-  padding: 10px;
-}
-
-.card,
-.todoContent,
-.createCard,
-.form,
-input[type="text"],
-textarea,
-.button {
-  border-radius: 4px;
-}
-
-.form > * {
-  padding: 10px;
-}
-
-.cardHeader {
-  border-bottom: 1.25px solid #202125;
-  margin-bottom: 0px;
-}
-
-.cardHeader > h4 {
-  word-wrap: break-word;
-  margin: 0;
-}
-
-.todoList {
-  border-bottom: 1.25px solid #202125;
-}
-
-.todoContent {
-  margin: 0;
-}
-
-.todo > .todoContent:hover {
-  background-color: #202125;
-}
-
-.createCard {
-  background-color: #282c34;git 
-  height: 120px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-.addTodo .error {
-  color: #ff644f;
-  padding-bottom: 0;
-}
-*/
-/* input CSS ----------------------*/
 
 .left {
   float: left;

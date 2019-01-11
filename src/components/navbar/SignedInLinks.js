@@ -16,7 +16,7 @@ class SignedInLinks extends Component {
     return (
       <div className={className}>
         <NavLink to="/" className="navitem brand-logo">
-          TODO
+          <h4>2DO</h4>
         </NavLink>
         <NavLink to="/signout" className="navitem">
           Sign out

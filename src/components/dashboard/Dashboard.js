@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-import ProjectList from "./projects/ProjectList";
-import CardList from "./cards/CardList";
+import SideBar from "./SideBar";
+import Content from "./Content";
 
 class Dashboard extends Component {
   render() {
     return (
       <div className="dashboard">
-        <ProjectList />
-        <div className="cards">
-          <CardList />
-        </div>
+        <SideBar />
+        <Content />
       </div>
     );
   }

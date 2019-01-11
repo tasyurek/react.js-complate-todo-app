@@ -1,0 +1,70 @@
+.sidebar {
+  position: relative;
+  margin: 0 10px 0 0;
+  width: 300px;
+  min-width: 300px;
+  height: 100vh;
+  background-color: #212329;
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-hide {
+  display: block;
+}
+.hide-sidebar-header {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 50px 15px 0 0px;
+  padding-left: 15px;
+  border-left: 3px solid var(--uniqe-color);
+}
+
+.sidebar-header {
+  padding: 0 10px 10px 10px;
+  border-bottom: 1px solid var(--hover-bg-color);
+}
+
+.project {
+  padding: 10px;
+  color: var(--normal-input-color);
+  border-left: 5px solid var(--secondary-color);
+}
+.project:hover {
+  background-color: var(--hover-bg-color);
+  border-left: 5px solid var(--uniqe-color);
+  transition: 0.2s ease-out;
+}
+
+.project > .project-title {
+  word-wrap: break-word;
+}
+
+#slideIn {
+  min-width: 48px;
+  width: 300px;
+}
+#slideOut {
+  min-width: 48px;
+  width: 48px;
+}
+#show {
+  display: block;
+}
+#hide {
+  display: none;
+}
+
+#open {
+  transform: rotate(-180deg);
+}
+#close {
+  transform: rotate(0deg);
+}
+
+#slideIn,
+#slideOut,
+#hide,
+#open,
+#close {
+  transition: 0.5s ease-out;
+}

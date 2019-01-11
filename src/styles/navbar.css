@@ -1,7 +1,10 @@
 .navbar {
-  background-color: #282c34;
+  background-color: var(--primary-color);
   overflow: hidden;
   font-family: "Raleway", sans-serif;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #282c34;
+  box-sizing: border-box;
 }
 
 .navbar .navitem {
@@ -12,21 +15,27 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .navbar .navitem:not(:first-child):hover {
-  background-color: #3a3d42;
+  border-bottom: 1px solid var(--uniqe-color);
+  transition: 0.75s ease-out;
 }
 
-.navbar > .brand-logo {
+.navbar .brand-logo {
   float: left;
-  background-color: #ff644f;
+  background-color: var(--uniqe-color);
+  color: #282c34;
+  border-bottom: 1px solid var(--uniqe-color);
+  letter-spacing: 1.5px;
+  padding: 14px 6px;
 }
 
 .navbar > .icon {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: var(--text-color);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;

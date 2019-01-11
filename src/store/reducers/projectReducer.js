@@ -2,24 +2,20 @@ import { CREATE_PROJECT } from "../actions/actions";
 
 const projects = [
   {
-    id: 1,
-    title: "Delectus aut autem"
+    pId: 1,
+    title: "Working front-end"
   },
   {
-    id: 2,
-    title: "Quis ut nam facilis et officia qui"
+    pId: 2,
+    title: "New Shopping Website"
   },
   {
-    id: 3,
-    title: "Fugiat veniam minus"
+    pId: 3,
+    title: "graphQL Project"
   },
   {
-    id: 4,
-    title: "Et porro tempora"
-  },
-  {
-    id: 5,
-    title: "Laboriosam mollitia"
+    pId: 4,
+    title: "Homework"
   }
 ];
 
