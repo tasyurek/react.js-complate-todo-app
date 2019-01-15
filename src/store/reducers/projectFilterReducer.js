@@ -6,8 +6,8 @@ const projectFilterReducer = (state = projectId, action) => {
   console.log("filtering");
   switch (action.type) {
     case FILTER_PROJECT:
-      state = action.pId;
-      console.log(action.pId);
+      state = action.id;
+      console.log(action.id);
       return state;
     default:
       return state;

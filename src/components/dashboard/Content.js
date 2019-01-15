@@ -4,7 +4,7 @@ import CardList from "./cards/CardList";
 export class Content extends Component {
   render() {
     return (
-      <div>
+      <div id="content">
         <CardList />
       </div>
     );

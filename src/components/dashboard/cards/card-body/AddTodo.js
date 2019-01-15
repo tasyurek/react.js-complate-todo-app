@@ -46,7 +46,7 @@ export class AddTodo extends Component {
             Cancel
           </button>
         </div>
-        <span className="error">{error}</span>
+        <span className="warn-text">{error}</span>
       </div>
     ) : (
       <div>

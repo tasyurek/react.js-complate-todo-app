@@ -15,6 +15,7 @@ const todoReducer = (state = todos, action) => {
         cardId: action.cardId,
         content: action.content
       };
+      console.log(newTodo);
       return [...state, newTodo];
 
     case DELETE_TODO:

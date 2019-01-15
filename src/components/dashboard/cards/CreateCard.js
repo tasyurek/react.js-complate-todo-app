@@ -55,7 +55,7 @@ class CreateCard extends Component {
                 Cancel
               </button>
             </div>
-            <span className="error">{this.state.error}</span>
+            <span className="warn-text">{this.state.error}</span>
           </form>
         )}
       </div>

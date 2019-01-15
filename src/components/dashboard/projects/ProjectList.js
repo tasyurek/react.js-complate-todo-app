@@ -8,7 +8,7 @@ class ProjectList extends Component {
     let projectList =
       projects &&
       projects.map(project => {
-        return <Project project={project} key={project.pId} />;
+        return <Project project={project} key={project.id} />;
       });
 
     return <div className="project-list">{projectList}</div>;

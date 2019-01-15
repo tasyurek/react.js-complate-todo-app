@@ -2,19 +2,19 @@ import { CREATE_PROJECT } from "../actions/actions";
 
 const projects = [
   {
-    pId: 1,
+    id: 1,
     title: "Working front-end"
   },
   {
-    pId: 2,
+    id: 2,
     title: "New Shopping Website"
   },
   {
-    pId: 3,
+    id: 3,
     title: "graphQL Project"
   },
   {
-    pId: 4,
+    id: 4,
     title: "Homework"
   }
 ];

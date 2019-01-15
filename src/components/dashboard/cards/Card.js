@@ -9,8 +9,8 @@ class Card extends Component {
       <div>
         <div className="card">
           <CardHeader title={this.props.title} />
-          <CardBody cardId={this.props.cardId} />
-          <CardFooter cardId={this.props.cardId} />
+          <CardBody id={this.props.id} />
+          <CardFooter id={this.props.id} />
         </div>
       </div>
     );

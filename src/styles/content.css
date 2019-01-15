@@ -1,4 +1,4 @@
-.content {
+#content {
   margin: 20px;
 }
 
@@ -23,20 +23,12 @@
   box-sizing: border-box;
   height: 100%;
   margin: 0 20px 20px 0;
-  transition: 0.1s ease-out;
 }
 
 /* header */
 .card-header {
   padding: 20px;
   word-wrap: break-word;
-}
-
-/* body */
-.card-body {
-}
-
-.todo-list {
 }
 
 .todo {
@@ -50,16 +42,4 @@
 .todo-content {
   word-wrap: break-word;
   overflow: hidden;
-}
-.todo-header {
-}
-.add-todo {
-}
-
-/* footer */
-.card-footer {
-}
-.card-actions {
-}
-.card-delete-action {
 }

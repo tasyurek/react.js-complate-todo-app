@@ -5,10 +5,7 @@ import Content from "./Content";
 class Dashboard extends Component {
   render() {
     return (
-      <div className="dashboard">
-        {/* map all project for content, pass project with sidebar and content
-          if 
-        */}
+      <div id="dashboard">
         <SideBar />
         <Content />
       </div>

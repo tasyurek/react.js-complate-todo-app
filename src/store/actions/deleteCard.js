@@ -1,10 +1,10 @@
 import { DELETE_CARD } from "./actions";
 
-const deleteCard = cardId => {
-  console.log("cardId:", cardId, "is deleted");
+const deleteCard = id => {
+  console.log("id:", id, "is deleted");
   return {
     type: DELETE_CARD,
-    cardId
+    id
   };
 };
 

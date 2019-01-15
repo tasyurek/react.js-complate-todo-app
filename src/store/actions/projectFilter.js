@@ -1,10 +1,10 @@
 import { FILTER_PROJECT } from "./actions";
 
-const projectFilter = pId => {
-  console.log("action", pId);
+const projectFilter = id => {
+  console.log("action", id);
   return {
     type: FILTER_PROJECT,
-    pId
+    id
   };
 };
 

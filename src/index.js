@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./styles/index.css";
 import "./styles/navbar.css";
 import "./styles/grid.css";
-import "./styles/card.css";
+import "./styles/content.css";
 import "./styles/sidebar.css";
 import "./styles/form.css";
 import App from "./App";

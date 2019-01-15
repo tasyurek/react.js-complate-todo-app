@@ -4,7 +4,7 @@ const createCard = (pId, title) => {
   console.log(title);
   return {
     type: CREATE_CARD,
-    cardId: Math.random(),
+    id: Math.random(),
     pId,
     title
   };

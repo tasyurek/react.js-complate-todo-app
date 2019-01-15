@@ -12,8 +12,8 @@ class CardList extends Component {
 
     cardList = cardList.map(card => {
       return (
-        <div key={card.cardId}>
-          <Card title={card.title} cardId={card.cardId} />
+        <div key={card.id}>
+          <Card title={card.title} id={card.id} />
         </div>
       );
     });

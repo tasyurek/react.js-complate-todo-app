@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 
 class Project extends Component {
   handleClick = () => {
-    this.props.filterProject(this.props.project.pId);
+    this.props.filterProject(this.props.project.id);
   };
   render() {
     let project = this.props.project;
@@ -20,7 +20,7 @@ class Project extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    filterProject: pId => dispatch(projectFilter(pId))
+    filterProject: id => dispatch(projectFilter(id))
   };
 };
 

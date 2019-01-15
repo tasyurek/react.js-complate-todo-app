@@ -5,7 +5,7 @@ import AddTodo from "./AddTodo";
 
 class TodoList extends Component {
   render() {
-    const cardId = this.props.cardId;
+    const cardId = this.props.id;
     let todos = this.props.todos;
 
     // return filtered todos by card id
