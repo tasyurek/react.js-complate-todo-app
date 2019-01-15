@@ -25,7 +25,7 @@ class CreateCard extends Component {
     e.preventDefault();
 
     if (this.state.input.trim()) {
-      this.props.createCard(this.state.input);
+      this.props.createCard(this.props.pId, this.state.input);
       this.setState({ input: "", active: false });
     } else this.setState({ error: "It should not be empty!" });
   };
@@ -65,7 +65,7 @@ class CreateCard extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    createCard: title => dispatch(createCard(title))
+    createCard: (pId, title) => dispatch(createCard(pId, title))
   };
 };
 

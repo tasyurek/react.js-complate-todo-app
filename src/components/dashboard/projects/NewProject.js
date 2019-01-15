@@ -27,7 +27,7 @@ export class NewProject extends Component {
   render() {
     const createProjectForm = (
       <div className="row">
-        <div className="col s12 m6 offset-m3 l4 offset-l4">
+        <div>
           <h3>Create Project</h3>
           <form>
             <label htmlFor="title">

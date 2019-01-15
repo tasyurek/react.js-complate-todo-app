@@ -33,6 +33,7 @@
   background-color: var(--hover-bg-color);
   border-left: 5px solid var(--uniqe-color);
   transition: 0.2s ease-out;
+  cursor: pointer;
 }
 
 .project > .project-title {
@@ -40,7 +41,7 @@
 }
 
 #slideIn {
-  min-width: 48px;
+  min-width: 300px;
   width: 300px;
 }
 #slideOut {

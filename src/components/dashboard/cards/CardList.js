@@ -5,8 +5,12 @@ import CreateCard from "./CreateCard";
 
 class CardList extends Component {
   render() {
+    const pId = this.props.projectId;
     const cards = this.props.cards;
-    const cardList = cards.map(card => {
+
+    let cardList = cards.filter(card => card.pId === pId);
+
+    cardList = cardList.map(card => {
       return (
         <div key={card.cardId}>
           <Card title={card.title} cardId={card.cardId} />
@@ -19,7 +23,7 @@ class CardList extends Component {
         <h3>Cards</h3>
         <div className="card-list">
           {cardList}
-          <CreateCard />
+          <CreateCard pId={pId} />
         </div>
       </div>
     );
@@ -28,7 +32,8 @@ class CardList extends Component {
 
 const mapStateToProps = state => {
   return {
-    cards: state.cardReducer
+    cards: state.cardReducer,
+    projectId: state.projectFilterReducer
   };
 };
 
