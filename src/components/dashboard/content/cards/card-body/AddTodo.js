@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import addTodo from "../../../../store/actions/addTodo";
+import addTodo from "../../../../../store/actions/addTodo";
 
 export class AddTodo extends Component {
   state = { content: "", show: false, error: "" };

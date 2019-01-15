@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import SideBar from "./SideBar";
-import Content from "./Content";
+import SideBar from "./sidebar/SideBar";
+import Content from "./content/Content";
 
 class Dashboard extends Component {
   render() {

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import createCard from "../../../store/actions/createCard";
+import createCard from "../../../../store/actions/createCard";
 import { connect } from "react-redux";
 
 class CreateCard extends Component {

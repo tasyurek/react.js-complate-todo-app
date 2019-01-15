@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import projectFilter from "../../../store/actions/projectFilter";
+import projectFilter from "../../../../store/actions/projectFilter";
 import { connect } from "react-redux";
 
 class Project extends Component {
@@ -9,10 +9,8 @@ class Project extends Component {
   render() {
     let project = this.props.project;
     return (
-      <div className="project">
-        <p className="project-title" onClick={this.handleClick}>
-          {project.title}
-        </p>
+      <div className="project" onClick={this.handleClick}>
+        <p className="project-title">{project.title}</p>
       </div>
     );
   }

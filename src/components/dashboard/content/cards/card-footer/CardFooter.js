@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <div className="card-footer">
         <div className="card-actions">
-          <DeleteCard cardId={this.props.cardId} />
+          <DeleteCard id={this.props.id} />
         </div>
       </div>
     );

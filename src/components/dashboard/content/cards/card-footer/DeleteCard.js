@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import deleteCard from "../../../../store/actions/deleteCard";
+import deleteCard from "../../../../../store/actions/deleteCard";
 
 export class DeleteCard extends Component {
   state = { show: false };
@@ -19,7 +19,7 @@ export class DeleteCard extends Component {
           <button
             className="button"
             onClick={() => {
-              this.props.deleteCard(this.props.cardId);
+              this.props.deleteCard(this.props.id);
             }}
           >
             Yes
@@ -44,7 +44,7 @@ export class DeleteCard extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    deleteCard: cardId => dispatch(deleteCard(cardId))
+    deleteCard: id => dispatch(deleteCard(id))
   };
 };
 

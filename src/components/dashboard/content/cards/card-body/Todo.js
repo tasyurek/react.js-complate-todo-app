@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import deleteTodo from "../../../../store/actions/deleteTodo.js";
+import deleteTodo from "../../../../../store/actions/deleteTodo.js";
 import { connect } from "react-redux";
 
 class Todo extends Component {
