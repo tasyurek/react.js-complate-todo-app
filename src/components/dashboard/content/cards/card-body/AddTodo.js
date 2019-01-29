@@ -34,11 +34,11 @@ export class AddTodo extends Component {
     const error = this.state.error;
 
     const input = this.state.show ? (
-      <div className="form">
-        <div className="input-bar">
+      <form>
+        <div className="input-field">
           <textarea onChange={this.handleChange} value={this.state.content} />
         </div>
-        <div className="button-bar">
+        <div className="input-field">
           <button className="button" onClick={this.handleSubmit}>
             Add
           </button>
@@ -46,8 +46,8 @@ export class AddTodo extends Component {
             Cancel
           </button>
         </div>
-        <span className="warn-text">{error}</span>
-      </div>
+        <div className="error-field">{this.state.error && error}</div>
+      </form>
     ) : (
       <div>
         <i className="fas fa-plus-circle icon" onClick={this.handleClick} />

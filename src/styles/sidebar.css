@@ -21,22 +21,31 @@
 
 .sidebar-header {
   padding: 0 10px 10px 10px;
-  border-bottom: 1px solid var(--hover-bg-color);
 }
 
 .project {
-  padding: 10px;
+  padding: 20px 10px;
   color: var(--normal-input-color);
   border-left: 5px solid var(--secondary-color);
+  border-bottom: 1px solid var(--hover-bg-color);
 }
+.project:first-child {
+  border-top: 1px solid var(--hover-bg-color);
+}
+
 .project:hover {
   background-color: var(--hover-bg-color);
   border-left: 5px solid var(--uniqe-color);
   transition: 0.2s ease-out;
   cursor: pointer;
 }
+.project-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-.project > .project-title {
+.project .project-title {
   word-wrap: break-word;
 }
 
@@ -68,4 +77,9 @@
 #open,
 #close {
   transition: 0.5s ease-out;
+}
+
+#projectSettings {
+  padding: 5px;
+  margin-top: 20px;
 }

@@ -77,5 +77,20 @@ textarea {
 }
 .warn-text {
   color: var(--warn-color);
-  padding-left: 10px;
+}
+.button-field {
+  padding: 10px;
+}
+
+form {
+  border-top: 1px solid var(--card-color);
+  padding: 5px;
+}
+
+.form-header {
+  padding: 10px 5px;
+}
+.input-field,
+.error-field {
+  padding: 5px;
 }

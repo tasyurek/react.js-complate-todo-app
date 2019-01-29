@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ProjectList from "./projects/ProjectList";
+import CreateProject from "./projects/CreateProject";
 
 export class SideBar extends Component {
   state = { show: false };
@@ -25,6 +26,7 @@ export class SideBar extends Component {
         <div id={content}>
           <h3 className="sidebar-header">Projects</h3>
           <ProjectList />
+          <CreateProject />
         </div>
         <i
           id={icon}

@@ -11,11 +11,11 @@ export class DeleteCard extends Component {
 
   render() {
     const deleteQuestion = this.state.show ? (
-      <div className="form">
-        <div className="title-bar">
+      <form>
+        <div className="form-header">
           <p>Are you sure?</p>
         </div>
-        <div className="button-bar">
+        <div className="input-field">
           <button
             className="button"
             onClick={() => {
@@ -28,12 +28,11 @@ export class DeleteCard extends Component {
             No
           </button>
         </div>
-      </div>
+      </form>
     ) : (
       <i
         className="far fa-trash-alt icon right"
         onClick={() => {
-          // this.props.deleteCard(cardId);
           this.setState({ show: true });
         }}
       />

@@ -40,16 +40,16 @@ class CreateCard extends Component {
           </button>
         )}
         {this.state.active && (
-          <form className="form" onSubmit={this.handleSubmit}>
-            <div className="title-bar">Card title</div>
-            <div className="input-bar">
+          <form onSubmit={this.handleSubmit}>
+            <h4 className="form-header">Add Card</h4>
+            <div className="input-field">
               <input
                 type="text"
                 onChange={this.handleChange}
                 value={this.state.input}
               />
             </div>
-            <div className="button-bar">
+            <div className="input-field">
               <input type="submit" className="button" value="Add" />
               <button className="button right" onClick={this.handleClick}>
                 Cancel
