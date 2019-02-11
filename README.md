@@ -1,14 +1,19 @@
 ![screenshot 28](https://user-images.githubusercontent.com/24756389/52576350-f083fb00-2e30-11e9-806e-94cef0ad0c4e.png)
 ![screenshot 29](https://user-images.githubusercontent.com/24756389/52576351-f11c9180-2e30-11e9-8a44-cc59d62662e0.png)
+Creating new project
 ![screenshot 30](https://user-images.githubusercontent.com/24756389/52576336-ee21a100-2e30-11e9-9f1d-56437c4c467f.png)
 ![screenshot 31](https://user-images.githubusercontent.com/24756389/52576337-eeba3780-2e30-11e9-9019-1c338a2c51da.png)
+Add a card
 ![screenshot 34](https://user-images.githubusercontent.com/24756389/52576338-eeba3780-2e30-11e9-9e1f-c0349fa01829.png)
 ![screenshot 35](https://user-images.githubusercontent.com/24756389/52576339-eeba3780-2e30-11e9-9631-4a3d7c011e0c.png)
+Add a todo
 ![screenshot 36](https://user-images.githubusercontent.com/24756389/52576340-eeba3780-2e30-11e9-9c6a-edf6d2c2169e.png)
 ![screenshot 37](https://user-images.githubusercontent.com/24756389/52576341-ef52ce00-2e30-11e9-8772-2917fa08c0ec.png)
+Delete todo
 ![screenshot 38](https://user-images.githubusercontent.com/24756389/52576343-ef52ce00-2e30-11e9-80aa-17371a92f531.png)
 ![screenshot 39](https://user-images.githubusercontent.com/24756389/52576345-ef52ce00-2e30-11e9-8c2f-9c2825730d34.png)
 ![screenshot 40](https://user-images.githubusercontent.com/24756389/52576347-efeb6480-2e30-11e9-9e2d-d3c0d3b57893.png)
+Delete Card
 ![screenshot 41](https://user-images.githubusercontent.com/24756389/52576348-f083fb00-2e30-11e9-8a71-26efb4b7bc5a.png)
 
 
