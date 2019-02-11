@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import createCard from "../../../../store/actions/createCard";
 import { connect } from "react-redux";
 
-class CreateCard extends Component {
+class AddCard extends Component {
   state = {
     input: "",
     active: false,
@@ -34,12 +34,7 @@ class CreateCard extends Component {
     const cardStyle = this.state.active ? "add-card" : "";
     return (
       <div className={cardStyle}>
-        {!this.state.active && (
-          <button className="button" onClick={this.handleClick}>
-            Add Card
-          </button>
-        )}
-        {this.state.active && (
+        {this.state.active ? (
           <form onSubmit={this.handleSubmit}>
             <h4 className="form-header">Add Card</h4>
             <div className="input-field">
@@ -50,13 +45,17 @@ class CreateCard extends Component {
               />
             </div>
             <div className="input-field">
-              <input type="submit" className="button" value="Add" />
-              <button className="button right" onClick={this.handleClick}>
+              <input type="submit" className="button light" value="Add" />
+              <button className="button light right" onClick={this.handleClick}>
                 Cancel
               </button>
             </div>
             <span className="warn-text">{this.state.error}</span>
           </form>
+        ) : (
+          <button className="button dark" onClick={this.handleClick}>
+            Add Card
+          </button>
         )}
       </div>
     );
@@ -72,4 +71,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   null,
   mapDispatchToProps
-)(CreateCard);
+)(AddCard);

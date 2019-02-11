@@ -48,17 +48,33 @@ textarea,
 
 .button {
   border: none;
-  background-color: var(--text-color);
   padding: 12px 14px;
   font-size: 14px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
 }
+.dark {
+  background-color: var(--dark-color);
+  color: var(--text-color);
+}
+.light {
+  background-color: var(--text-color);
+}
 
-.button:hover {
+.dark:hover,
+.light:hover {
   border: none;
-  background-color: var(--uniqe-color);
   cursor: pointer;
   box-shadow: 0 0px;
+}
+.dark:hover {
+  background-color: var(--hover-bg-color);
+}
+.light:hover {
+  background-color: var(--uniqe-color);
+}
+
+.dark-text {
+  color: var(--dark-color);
 }
 
 input[type="text"],
@@ -93,4 +109,17 @@ form {
 .input-field,
 .error-field {
   padding: 5px;
+}
+
+#open-cog-animation {
+  animation: open 1s;
+}
+
+@keyframes open {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
 }

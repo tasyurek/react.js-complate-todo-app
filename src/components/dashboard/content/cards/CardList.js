@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Card from "./Card";
-import CreateCard from "./CreateCard";
+import AddCard from "./AddCard";
 
 class CardList extends Component {
   render() {
@@ -20,10 +20,10 @@ class CardList extends Component {
 
     return (
       <div className="content">
-        <h3>Cards</h3>
+        <h3 className="dark-text">Cards</h3>
         <div className="card-list">
           {cardList}
-          <CreateCard pId={pId} />
+          <AddCard pId={pId} />
         </div>
       </div>
     );

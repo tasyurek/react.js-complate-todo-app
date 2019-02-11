@@ -29,9 +29,9 @@ export class CreateProject extends Component {
   };
 
   render() {
-    const defaultState = (
+    const createNewProjectButton = (
       <div className="button-field">
-        <button className="button" onClick={this.handleClick}>
+        <button className="button light" onClick={this.handleClick}>
           Create New Project
         </button>
       </div>
@@ -50,19 +50,19 @@ export class CreateProject extends Component {
           />
         </div>
         <div className="input-field">
-          <button className="button" onClick={this.handleCreate}>
+          <button className="button light" onClick={this.handleCreate}>
             Create
           </button>
-          <button className="button right" onClick={this.handleClick}>
+          <button className="button light right" onClick={this.handleClick}>
             Cancel
           </button>
         </div>
         <div className="error-field">{this.state.error && error}</div>
       </form>
     ) : (
-      <div>{defaultState}</div>
+      <div>{createNewProjectButton}</div>
     );
-    return <div>{createProjectForm}</div>;
+    return <div className="create-project">{createProjectForm}</div>;
   }
 }
 

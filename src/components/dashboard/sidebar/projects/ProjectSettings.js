@@ -1,21 +1,17 @@
 import React, { Component } from "react";
 
 export class ProjectSettings extends Component {
-  state = { openSettings: false };
-
-  handleClick = () => {
-    this.setState(state => ({ openSettings: !state.openSettings }));
-  };
   render() {
-    const projectSettings = this.state.openSettings ? (
-      <div>Settings</div>
-    ) : (
-      <div className="right" onClick={this.handleClick}>
-        <i className="fas fa-cog" />
+    return (
+      <div id="projectSettings">
+        <div className="input-field">
+          <button className="button light">Change Title</button>
+        </div>
+        <div className="input-field">
+          <button className="button light">Delete Project</button>
+        </div>
       </div>
     );
-
-    return <div className="right">{projectSettings}</div>;
   }
 }
 

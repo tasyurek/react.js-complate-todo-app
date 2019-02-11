@@ -4,10 +4,11 @@ import { connect } from "react-redux";
 import ProjectSettings from "./ProjectSettings";
 
 class Project extends Component {
-  state = { hover: false, openSettings: false };
+  state = { active: false, hover: false, openSettings: false };
 
   handleClick = () => {
     this.props.filterProject(this.props.project.id);
+    this.setState({ active: true });
   };
 
   mouseEnter = () => {
@@ -24,34 +25,33 @@ class Project extends Component {
 
   render() {
     let project = this.props.project;
-
-    const projectSettings = this.state.openSettings ? (
-      <div id="projectSettings">
-        <div className="input-field">
-          <div>Change Title</div>
-        </div>
-        <div className="input-field">
-          <button className="button">Delete</button>
-        </div>
-      </div>
-    ) : null;
+    let isActive = this.state.active ? "active" : "";
+    let cogAnimation = this.state.openSettings ? "open-cog-animation" : "";
 
     return (
       <div
         className="project"
+        id={isActive}
         onClick={this.handleClick}
         onMouseEnter={this.mouseEnter}
         onMouseLeave={this.mouseLeave}
       >
         <div className="project-header">
           <p className="project-title">{project.title}</p>
-          {this.state.hover && (
-            <i className="fas fa-cog" onClick={this.handleSettings} />
+          {(this.state.hover || this.state.openSettings) && (
+            <i
+              className="fas fa-cog"
+              id={cogAnimation}
+              onClick={this.handleSettings}
+            />
           )}
         </div>
-        <div className="project-body">
-          {this.state.openSettings && projectSettings}
-        </div>
+
+        {this.state.openSettings && (
+          <div className="project-body">
+            {this.state.openSettings && <ProjectSettings />}
+          </div>
+        )}
       </div>
     );
   }
